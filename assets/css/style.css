@@ -1,0 +1,14 @@
+/* ap dung cho tac ca phan tu*/
+* {
+  box-sizing: border-box;
+}
+
+/* quy doi */
+html {
+  font-size: 62.5%;
+}
+/* khoi phuc lai co chu mac dinh theo rem */
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+}
