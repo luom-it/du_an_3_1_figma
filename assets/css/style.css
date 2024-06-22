@@ -42,6 +42,20 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
+.section-heading {
+  color: var(--header-bg);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.section-desc {
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67; /* 175% */
+}
 /* =======================header===================== */
 header {
   padding-top: 30px;
@@ -107,20 +121,16 @@ header {
   flex: 1;
 }
 .hero__heading {
-  /* width: 517px; */
   color: #fff;
   font-size: 7rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.14; /* 114.286% */
   letter-spacing: -1.4px;
 }
 .hero__desc {
-  /* width: 468px; */
   margin-top: 22px;
   color: #c9d2da;
   font-size: 1.8rem;
-  font-style: normal;
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
 }
@@ -157,4 +167,75 @@ header {
 .hero__img--small {
   width: 210px;
   height: 410px;
+}
+/* =========================our service===============*/
+.service {
+  padding: 170px 0;
+  background: #fff;
+}
+.service__desc,
+.section-heading {
+  text-align: center;
+}
+.service__desc {
+  width: 468px;
+  margin: 0 auto;
+}
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.service-item {
+  padding: 21px;
+  width: 470px;
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.25s;
+}
+.service-item:hover {
+  /* su dung position: relative; nay de lam cho bong do khoi bi trung , vi no se dua cai item sang 1 mat phang khac */
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.service-item:hover .service-item__icon {
+  color: #fff;
+  border-radius: 30px;
+  background: #2e80ce;
+  box-shadow: 0px 8px 16px 0px rgba(40, 155, 222, 0.15);
+}
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: 0.25s;
+}
+.service-item__heading {
+  color: var(--header-bg);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.service-item__desc {
+  color: #575f66;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.service__btn {
+  margin-top: 55px;
 }
