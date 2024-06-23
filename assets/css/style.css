@@ -409,3 +409,43 @@ header {
   /* dung rotate de xoay chieu */
   rotate: 180deg;
 }
+/* ===================install mobile=================== */
+.install {
+  margin: 180px 0 85px;
+}
+/* install left */
+.install__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+.install__img {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+/* install right */
+.install__content {
+  min-width: 586px;
+}
+.install__heading {
+  color: #fff;
+  max-width: 489px;
+}
+.install__desc {
+  color: #fff;
+  max-width: 586px;
+}
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
